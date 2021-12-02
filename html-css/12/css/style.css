@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+section {
+    flex-grow: 1;
+    height: 200px;
+    background-color: antiquewhite;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}

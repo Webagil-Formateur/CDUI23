@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+header,
+nav,
+section,
+aside,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 50%;
+    /* Equivalent à "width: 50%;" */
+    color: white;
+    font-size: 30px;
+}
+
+header {
+    background-color: greenyellow;
+}
+
+nav {
+    background-color: lightblue;
+}
+
+section {
+    background-color: purple;
+}
+
+aside {
+    background-color: orange;
+}
+
+footer {
+    background-color: red;
+}

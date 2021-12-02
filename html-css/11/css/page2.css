@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 10px;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 10px;
+}
+
+
+/* Les blocs de couleurs */
+
+body>div {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bloc1,
+#bloc6 {
+    background-color: green;
+}
+
+#bloc2,
+#bloc7 {
+    background-color: blue;
+}
+
+#bloc3,
+#bloc8 {
+    background-color: purple;
+}
+
+#bloc4,
+#bloc9 {
+    background-color: orange;
+}
+
+#bloc5 {
+    flex: 1 1 100%;
+    background-color: red;
+}
+
+
+/* Div des nombres */
+
+body>div>div {
+    background-color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

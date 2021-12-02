@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+section {
+    min-height: 100vh;
+}
+
+
+/*    font-family: 'Pacifico', cursive;
+
+/*********************************
+    HEADER
+*/
+
+header {
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a,
+header a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+
+/*********************************
+    ACCUEIL
+*/
+
+#accueil {
+    background-image: url("../img/background-pains.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#accueil h1 {
+    font-size: 150px;
+    font-weight: bold;
+}
+
+#accueil p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/*********************************
+    SAVOIR-FAIRE
+*/
+
+#savoir-faire {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#savoir-faire h2 {
+    font-size: 30px;
+}
+
+#savoir-faire div {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    padding: 0 25px;
+}
+
+#savoir-faire article img {
+    width: 100%;
+}
+
+#savoir-faire article p {
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*********************************
+    ILLUSTRATION PETRISSAGE
+*/
+
+#illustration-petrissage {
+    background-image: url("../img/background-farine-eau.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*********************************
+    PRESENTATION
+*/
+
+#presentation {
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+#presentation article {
+    width: 100%;
+    display: flex;
+}
+
+#presentation article div {
+    width: 100%;
+}
+
+#presentation .texte {
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+#presentation .texte h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+#presentation .texte h3 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+#presentation #produits .texte {
+    padding-right: 0;
+    padding-left: 50px;
+}
+
+#presentation .image {
+    background-size: cover;
+    background-position: center;
+}
+
+#a-propos .image {
+    background-image: url("../img/a-propos.webp");
+    background-position: top;
+}
+
+#produits .image {
+    background-image: url("../img/produits.webp");
+    order: -1;
+}

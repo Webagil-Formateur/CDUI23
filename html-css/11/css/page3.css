@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 10px;
+}
+
+
+/* Tous les blocs */
+
+section,
+article {
+    /* tous les blocs peuvent s'agrandir par défaut */
+    flex-grow: 1;
+    background-color: red;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Gestions des blocs contenant les 4 plus petits */
+
+.ensemble {
+    background-color: white;
+    flex-basis: 60%;
+    flex-grow: 0;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 10px;
+}
+
+article {
+    /* flex-grow, flex-shrink, flex-basis */
+    flex: 1 0 40%;
+}

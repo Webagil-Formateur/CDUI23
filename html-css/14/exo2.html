@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #parent {
+            border: 5px solid red;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .enfant {
+            height: 200px;
+            border: 5px solid blue;
+            flex: 1 1 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+        }
+        
+        @media (min-width: 768px) {
+            .enfant {
+                flex: 1 0 40%;
+            }
+            #enfant3 {
+                flex: 1 0 90%;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            #enfant3 {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="enfant" id="enfant1">1</div>
+        <div class="enfant" id="enfant2">2</div>
+        <div class="enfant" id="enfant3">3</div>
+        <div class="enfant" id="enfant4">4</div>
+        <div class="enfant" id="enfant5">5</div>
+    </div>
+</body>
+
+</html>

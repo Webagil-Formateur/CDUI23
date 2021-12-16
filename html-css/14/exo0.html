@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Récapitulatif Flexbox/Media Queries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .parent {
+            border: 5px solid red;
+        }
+        
+        .enfant {
+            height: 200px;
+            border: 5px solid blue;
+        }
+        
+        @media (min-width: 768px) {
+            .parent {
+                display: flex;
+            }
+            .enfant {
+                flex-grow: 1;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            #enfant2 {
+                flex-grow: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="enfant" id="enfant1"></div>
+        <div class="enfant" id="enfant2"></div>
+        <div class="enfant" id="enfant3"></div>
+    </div>
+</body>
+
+</html>

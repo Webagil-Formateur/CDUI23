@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-dark {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.bg-light {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+/* Header */
+
+header {
+    padding: 10px;
+}
+
+header p {
+    font-weight: 700;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header a,
+header a:visited {
+    color: #a0a8b0;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #1abc9c;
+}
+
+header a:active {
+    text-decoration: underline;
+}
+
+
+/* Main */
+
+main .container {
+    padding: 50px 10px;
+    gap: 20px;
+}
+
+
+/* Main - Portfolio */
+
+#portfolio article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#portfolio article img {
+    width: 100%;
+}
+
+
+/* Footer */
+
+footer .container {
+    padding: 50px 10px;
+    gap: 20px;
+}
+
+footer section {
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a,
+footer a:visited {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer a:active {
+    text-decoration: underline;
+}
+
+
+/* Responsive à partir des tablettes */
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+        padding: 0;
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header ul {
+        flex-direction: row;
+        gap: 25px;
+        margin-top: 0;
+    }
+    #portfolio article {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #portfolio article div {
+        flex-grow: 1;
+        flex-basis: 34%;
+    }
+}
+
+
+/* Responsive à partir des PC */
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    #portfolio article div {
+        flex-basis: 26%;
+    }
+    footer .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

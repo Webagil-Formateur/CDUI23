@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    padding: 20px;
+    color: #707070;
+    font-size: 18px;
+}
+
+h1,
+h2 {
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    color: #130F49;
+    font-size: 40px;
+    margin: 40px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #33A1CB;
+    font-size: 40px;
+    margin: 40px auto;
+}
+
+p {
+    margin: 40px auto;
+}
+
+img {
+    width: 100%;
+}
+
+#presentation {
+    text-align: center;
+}
+
+#realisation article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    #realisation article div {
+        flex: 1 1 40%;
+    }
+    #presentation {
+        display: flex;
+        gap: 20px;
+    }
+    #presentation article {
+        flex: 1 0 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #portrait-yohann {
+        order: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    #realisation article div {
+        flex: 1 1 21%;
+    }
+}
